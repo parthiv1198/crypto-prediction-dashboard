@@ -3,10 +3,10 @@ pandas
 numpy
 matplotlib
 scikit-learn
-tensorflow-cpu # Specifies the CPU version of TensorFlow
+tensorflow-cpu
 
-# Correct syntax for PyTorch CPU
-torch==2.1.0+cpu
-torchaudio==2.1.0+cpu
-torchvision==0.16.0+cpu
---find-links https://download.pytorch.org/whl/torch_stable.html
+# Correct, version-agnostic way to install PyTorch CPU
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+torchvision
+torchaudio
